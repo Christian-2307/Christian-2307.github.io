@@ -1,0 +1,190 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    width: 100%;
+    background-color: #1a73e8;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+/* Sección Introducción */
+.section-container {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.text-content h2 {
+    font-size: 2rem;
+    color: #1a73e8;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Buscador */
+#buscador {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 20px;
+    font-size: 1.5rem;
+    width: 95%;
+    max-width: 800px;
+    border-radius: 50px;
+    border: 2px solid #ddd;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-container input:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de Señas */
+#señas-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+#señas-container img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
+}
+
+#señas-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Sección de Videos */
+/* Sección de Videos */
+#videos .videos-header {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+#videos .videos-header h2 {
+    font-size: 2.5rem;
+    color: #1a73e8;
+    font-weight: 600;
+}
+
+#videos .videos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Ajuste automático de columnas */
+    gap: 30px; /* Espacio entre los recuadros de video */
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1200px; /* Mantiene el ancho del contenedor */
+    margin: 0 auto; /* Centra los videos */
+    padding: 20px; /* Espacio interno del contenedor */
+}
+
+.video-item {
+    position: relative;
+    padding-top: 56.25%; /* Mantiene la proporción 16:9 */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Efecto de sombra */
+    background-color: #fff; /* Fondo blanco para los recuadros */
+    border: 2px solid #ddd; /* Borde claro para separar cada video */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación */
+}
+
+.video-item:hover {
+    transform: scale(1.03); /* Efecto de agrandamiento */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Más sombra al pasar el cursor */
+}
+
+.video-item iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
